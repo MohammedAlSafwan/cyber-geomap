@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.search-container {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.panel-container {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.tree-arrow {
+  cursor: pointer;
+}
