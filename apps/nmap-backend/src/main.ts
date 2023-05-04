@@ -4,7 +4,7 @@ const nmap = require('node-nmap');
 const { exec } = require('child_process');
 var cors = require('cors');
 nmap.nmapLocation = 'nmap'; //default
-const host = process.env.HOST ?? 'asus-debian.local';
+const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 const app = express();
