@@ -1,0 +1,33 @@
+{
+  "name": "cyber-geomap-js-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/cyber-geomap-js-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/cyber-geomap-js-e2e/cypress.config.ts",
+        "devServerTarget": "cyber-geomap-js:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "cyber-geomap-js:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "cyber-geomap-js:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/cyber-geomap-js-e2e/**/*.js"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["cyber-geomap-js"]
+}
