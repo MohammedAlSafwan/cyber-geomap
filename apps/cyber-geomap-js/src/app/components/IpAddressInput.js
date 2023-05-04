@@ -11,7 +11,7 @@ const IpAddressInput = ({ setIsLoading, setData, setError, children }) => {
   const fetchScanResults = async (ip) => {
     setIsLoading(true)
     setIsLoadingLocal(true)
-    await axios.get(`http://localhost:3000/scan?ip=${ip}`)
+    await axios.get(`http://asus-debian.local:3000/scan?ip=${ip}`)
       .then((onfulfilled) => {
         setData(onfulfilled.data)
         setIsLoading(false)

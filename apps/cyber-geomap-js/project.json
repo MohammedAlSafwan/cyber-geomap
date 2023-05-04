@@ -53,7 +53,7 @@
       "options": {
         "buildTarget": "cyber-geomap-js:build",
         "hmr": true,
-        "host": "localhost",
+        "host": "asus-debian.local",
         "port": 4200
       },
       "configurations": {

@@ -3,6 +3,7 @@
 Cyber-Geomap is a sleek ReactJS app that visualizes nmap scan data on an interactive map. Enter an IP or domain, and explore the network's geographical connections with ease—your go-to tool for efficient cybersecurity analysis! 🔒💻
 
 ![Screenshot of My Awesome Project](./resources/demo.png)
+![Screenshot of My Awesome Project-2](./resources/demo2.png)
 
 ## Technologies used 🛠️
 - **nmap** - Backend tool used for scanning networks.
