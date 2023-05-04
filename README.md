@@ -16,7 +16,17 @@ Cyber-Geomap is a sleek ReactJS app that visualizes nmap scan data on an interac
 - Supports nmap scans for accurate network analysis.
 
 ## Getting Started 🚀
-To get started with the Cyber-Geomap application, simply clone this repository and follow the instructions in the README.md file located in the root directory of the project.
+To get started with the Cyber-Geomap application, simply clone this repository then:
+```
+nx serve cyber-geomap-js
+```
+open another terminal:
+```
+sudo nx serve nmap-backend
+```
+
+## Note:
+Make sure to have `nmap` added to your `$PATH` 
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
